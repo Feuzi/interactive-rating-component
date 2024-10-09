@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <title>Frontend Mentor | Interactive rating component</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="ratings-card">
+            <div class="ratings-form">
+                <img src="./images/icon-star.svg" class="star" alt="star icon" />
+                <h2>How did we do?</h2>
+                <p>
+                    Please let us know how we did with your support request. All feedback is appreciated to help us
+                    improve our offering!
+                </p>
+                <ul class="ratings">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <button type="button" class="submit-btn">Submit</button>
+            </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <div class="ratings-confirmation">
+                <img
+                    src="./images/illustration-thank-you.svg"
+                    class="ratings-confirmation-img"
+                    alt="thank you illustration"
+                />
+                <p class="ratings-selected-text">You selected <span class="rating-score"></span> out of 5</p>
+                <h2>Thank you!</h2>
+                <p>
+                    We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to
+                    get in touch!
+                </p>
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
 </html>
